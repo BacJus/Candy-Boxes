@@ -1,0 +1,8 @@
+The application uses four React components: App, Header, CandyContainer, and CandyCard.
+
+App: The main component that brings the other components together.
+Header: Displays the title of the chocolate candy shop using props.
+CandyContainer: Imports the candy data from candyData.js and uses .map() to create a CandyCard for each candy.
+CandyCard: Represents an individual candy. It receives candy information through props and displays the candy name, image, and a button. The button has useState to open and close a modal containing the candy's calories, description, and ingredients.
+
+The components are connected through imports and props. App renders CandyContainer, CandyContainer creates multiple CandyCard components, and each CandyCard receives its own candy information from the candy data array.
